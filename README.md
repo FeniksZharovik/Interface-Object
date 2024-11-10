@@ -2,7 +2,7 @@
 
 **Interface Object** adalah repository GitHub yang dirancang untuk menyimpan sementara dan mengelola antarmuka perangkat lunak selama proses pengembangan. Repository ini menyediakan ruang yang bersih dan efisien untuk menangani komponen UI, tata letak, dan elemen visual lainnya sebelum diintegrasikan ke dalam sistem utama. Repository ini sangat cocok untuk kolaborasi antara desainer dan pengembang agar dapat mengiterasi antarmuka dengan cepat tanpa memengaruhi fungsionalitas inti.
 
-![GIF Interface Object](https://media.giphy.com/media/3o6ZsU3r3OdKZqBvIs/giphy.gif)
+![GIF Interface Object](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
 
 ## 🚀 Fitur:
 - **Penyimpanan Interface Modular**: Menyimpan komponen UI, struktur data, dan konfigurasi dengan terorganisir.
