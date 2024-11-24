@@ -1,4 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@font-face {
+    font-family: 'more';
+    src: url('font/more');
+    src: url('font/more.eot?#iefix') format('embedded-opentype'), url('font/more.woff') format('woff'), url('font/more.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     padding: 3em 2em;
     font-family: 'Open Sans', Arial, sans-serif;
@@ -119,41 +127,22 @@ body {
 }
 
 .element.franklin {
-    background: url('http://www.eduardmayer.de/codepen-css-resources/images/gta/franklin.jpeg') 45% 0 no-repeat;
+    background: url('img/franklin.jpeg') 45% 0 no-repeat;
     background-size: cover;
 }
 
 .element.michael {
-    background: url('http://www.eduardmayer.de/codepen-css-resources/images/gta/michael.jpeg') 45% 0 no-repeat;
+    background: url('img/michael.jpeg') 45% 0 no-repeat;
     background-size: cover;
 }
 
 .element.trevor {
-    background: url('http://www.eduardmayer.de/codepen-css-resources/images/gta/trevor.jpeg') 45% 0 no-repeat;
+    background: url('img/trevor.jpeg') 45% 0 no-repeat;
     background-size: cover;
 }
 
 .element:last-of-type {
     margin: 0;
-}
-
-@media all and (min-width: 900px) {
-    .pen {
-        max-width: 890px;
-    }
-    .element {
-        width: 286px;
-    }
-    .element.inactive {
-        width: 246px;
-    }
-    .element.active {
-        width: 366px;
-    }
-    .stage {
-        max-width: 890px;
-        height: 600px;
-    }
 }
 
 @media all and (max-width: 660px) {
