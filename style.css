@@ -236,18 +236,28 @@ body {
     max-width: 100%;
 }
 
-.rectangle-top {
-    background: linear-gradient(to right, #2C5C99, #4A99FF);
+.rectangle-top,
+.rectangle-bottom {
     height: 100px;
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.rectangle-top {
+    background: linear-gradient(to right, #2C5C99, #4A99FF);
 }
 
 .rectangle-bottom {
     background: linear-gradient(to right, #4A99FF, #2C5C99);
-    height: 100px;
-    width: 100%;
-    margin: 0 auto;
+}
+
+.text-box1,
+.text-box2 {
+    text-align: center;
 }
 
 .square-container {
@@ -256,4 +266,141 @@ body {
     width: 100%;
     margin: 50px auto;
     max-width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    margin-right: 60px;
+}
+
+.wellcome-image {
+    width: 100%;
+    opacity: 0;
+    animation: fadeInLeft 1s forwards;
+}
+
+.home-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    opacity: 0;
+    animation: slideIn 1s 1s forwards;
+}
+
+.text-container {
+    max-width: 600px;
+}
+
+.text-container h2 {
+    margin-top: 0;
+}
+
+.text-container p {
+    margin-bottom: 1em;
+}
+
+.text-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.text-container a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(25%, -50%);
+    }
+}
+
+.text-box1 {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.text-box2 {
+    text-align: right;
+    margin-right: 40px;
+}
+
+@media (max-width: 1280px) {
+    .image-container {
+        width: 250px;
+    }
+    .home-image {
+        width: 175px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .image-container {
+        margin-right: 80px;
+    }
+    .home-image {
+        width: 150px;
+        animation: slideOut 1s 1s forwards;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        width: 150px;
+    }
+    .home-image {
+        width: 125px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container {
+        width: 100%;
+        margin-right: 0;
+    }
+    .home-image {
+        width: 100px;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(75%, -50%);
+    }
 }
