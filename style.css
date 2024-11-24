@@ -210,7 +210,7 @@ body {
 
 .footer-content {
     width: 70%;
-    padding: 20px;
+    padding: 40px;
 }
 
 .footer-box {
@@ -227,4 +227,33 @@ body {
         max-width: 960px;
         margin: 0 auto;
     }
+}
+
+.rectangle-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    max-width: 100%;
+}
+
+.rectangle-top {
+    background: linear-gradient(to right, #2C5C99, #4A99FF);
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.rectangle-bottom {
+    background: linear-gradient(to right, #4A99FF, #2C5C99);
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.square-container {
+    background: #ffffff;
+    height: 100px;
+    width: 100%;
+    margin: 50px auto;
+    max-width: 100%;
 }
