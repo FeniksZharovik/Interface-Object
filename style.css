@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
-    background: #111111;
+    background: #ffffff;
 }
 
 .pen {
@@ -89,7 +89,7 @@ body {
 }
 
 .element {
-    background: green;
+    background: white;
     width: 202px;
     -webkit-transform-origin: 50% 50%;
     height: inherit;
@@ -196,5 +196,35 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+.footer {
+    padding: 0;
+    margin: 50px 0;
+    background: linear-gradient(to right, #2C5C99, #4A99FF);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.footer-box {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(to right, #4A99FF, #2C5C99);
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer,
+    .footer-box {
+        max-width: 960px;
+        margin: 0 auto;
     }
 }
