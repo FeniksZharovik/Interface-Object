@@ -12,13 +12,22 @@
 </head>
 
 <body>
-    <section class="pen">
-        <div class="stage">
-            <div class="element michael"></div>
-            <div class="element franklin"></div>
-            <div class="element trevor"></div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
         </div>
-    </section>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
 
     <div class="rectangle-container">
         <div class="rectangle-top">
