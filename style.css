@@ -171,6 +171,7 @@
 
 .text-container h2 {
     margin-top: 0;
+    font-weight: bold;
 }
 
 .text-container p {
@@ -378,4 +379,8 @@
         opacity: 1;
         transform: translate(-25%, -50%);
     }
+}
+
+.main-container {
+    margin-top: 50px;
 }
