@@ -258,8 +258,8 @@ body {
 .text-box2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
+    padding: 0 20px;
 }
 
 .text-box1 h2,
@@ -437,17 +437,46 @@ body {
     float: right;
     width: 120px;
     height: auto;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .foot-image-left {
     float: left;
     width: 120px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .text-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-content h2,
+.text-content p {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.foot-image-right,
+.foot-image-left {
+    width: 120px;
+    height: auto;
+    margin: 0 40px;
+}
+
+.text-box1 .text-content {
+    align-items: flex-start;
+    text-align: left;
+    margin-right: auto;
+}
+
+.text-box2 .text-content {
+    align-items: flex-end;
+    text-align: right;
+    margin-left: auto;
 }
